@@ -1,6 +1,6 @@
-import { AfterContentInit, ChangeDetectorRef, ContentChild, ContentChildren, Directive, DoCheck, ElementRef, Input, IterableDiffers, IterableDiffer, NgZone, OnDestroy, Optional, QueryList, Renderer, TrackByFn } from '@angular/core';
+import { AfterContentInit, ChangeDetectorRef, ContentChild, ContentChildren, Directive, DoCheck, ElementRef, Input, IterableDiffers, IterableDiffer, NgZone, OnDestroy, Optional, QueryList, Renderer } from '@angular/core';
 
-import { adjustRendered, calcDimensions, estimateHeight, initReadNodes, processRecords, populateNodeData, updateDimensions, writeToNodes } from './virtual-util';
+import { adjustRendered, calcDimensions, estimateHeight, initReadNodes, processRecords, populateNodeData, TrackByFn, updateDimensions, writeToNodes } from './virtual-util';
 import { clearNativeTimeout, nativeRaf, nativeTimeout } from '../../util/dom';
 import { Config } from '../../config/config';
 import { Content } from '../content/content';

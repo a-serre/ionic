@@ -657,6 +657,11 @@ export class VirtualContext {
 }
 
 
+export interface TrackByFn {
+  (index: number, item: any): any;
+}
+
+
 export interface VirtualData {
   scrollTop?: number;
   scrollDiff?: number;
